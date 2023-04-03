@@ -8,7 +8,7 @@ class Program {
     static void Main(string[] args) {
         Console.Write("Введите трехзначное число: ");
         int number = int.Parse(Console.ReadLine());
-        int secondDigit = (number) % 10;
-        Console.WriteLine("3d number is: " + secondDigit);
+        int secondDigit = (number/10) % 10;
+        Console.WriteLine("2nd number is: " + secondDigit);
     }
 }
